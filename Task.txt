@@ -1,2 +1,15 @@
-what is google?
+1)Difference between http1 vs http2:
+    Http1:
+          *It works on the textual format.
+          *HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources            behind it.
+          *It uses requests resource inlining for use getting multiple pages.
+          It compresses data by itself.
+    Http2:  
+          *It works on the binary protocol.
+          *http2 is more reliable than http1.
+          *HTTP/2 is able to use a single TCP(Transmission control protocol) connection to send multiple streams of data at                once so that no one resource blocks any other resource.
+          *It uses PUSH frame by server that collects all multiple pages.
+          *It uses HPACK for data compression.
+     
+
  
