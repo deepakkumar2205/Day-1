@@ -1,0 +1,41 @@
+1)Difference between http1 vs http2:
+    Http1:
+          *It works on the textual format.
+          *HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+          *It uses requests resource inlining for use getting multiple pages.
+          It compresses data by itself.
+    Http2:  
+          *It works on the binary protocol.
+          *http2 is more reliable than http1.
+          *HTTP/2 is able to use a single TCP(Transmission control protocol) connection to send multiple streams of data at once so that no one resource blocks any                 other resource.
+          *It uses PUSH frame by server that collects all multiple pages.
+          *It uses HPACK for data compression.
+     
+
+ 
+2)blog about objects and its internal representation in Javascript:
+    Object:
+             *In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties.
+              A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their                                 characteristics.
+    creating objects in JS:
+             *Literally we can create object in javascript and also we can create object by creaing instance(using keyword).\
+    Synat:
+             object={ property1:value1,
+                      property2:value2,
+                      property3:value3
+                    }
+    example:
+             var person={ "name": "lavish",
+                           "age":  28
+                        }
+    instance creation synatx below:
+             var objectname=new objext();
+    example:
+             var emp=new Object();
+             emp.id=1;
+             emp.name="XXX";
+             emp.salery=25000;
+    we can acces javascript object by using below :
+             objectName.property
+             objectName["property"]
+             
